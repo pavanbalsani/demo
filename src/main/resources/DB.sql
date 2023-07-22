@@ -1,0 +1,14 @@
+
+CREATE SEQUENCE employee_id_seq
+    START WITH 0
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+CREATE TABLE employee (
+id INT PRIMARY KEY,
+name VARCHAR(100) NOT NULL,
+email VARCHAR(100) NOT NULL,
+age INT
+);

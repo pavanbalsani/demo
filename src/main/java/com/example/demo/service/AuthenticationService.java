@@ -19,14 +19,11 @@ public class AuthenticationService
                          AuthenticationException authEx) throws IOException {
 
         response.addHeader("WWW-Authenticate", "Basic realm=" + getRealmName() + "");
-//        response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-//        PrintWriter writer = response.getWriter();
-//        writer.println("HTTP Status 401 - " + authEx.getMessage());
     }
 
     @Override
     public void afterPropertiesSet() {
-        setRealmName("howtodoinjava");
+        setRealmName("helloPavan");
         super.afterPropertiesSet();
     }
 }
