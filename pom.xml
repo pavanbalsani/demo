@@ -83,6 +83,13 @@
             <artifactId>jacoco-maven-plugin</artifactId>
             <version>0.8.10</version>
         </dependency>
+
+        <!--- Redis Cache Integration Starts here-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <!--- Redis Cache Integration Starts here-->
     </dependencies>
     <!--- SonarQube Integration Starts here-->
     <profiles>
@@ -100,6 +107,7 @@
             </properties>
         </profile>
     </profiles>
+    <!--- SonarQube Integration ends here-->
     <build>
         <plugins>
             <plugin>

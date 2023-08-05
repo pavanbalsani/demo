@@ -1,5 +1,8 @@
 package com.example.demo.response;
-public class EmployeeResponse {
+
+import java.io.Serializable;
+
+public class EmployeeResponse implements Serializable {
 
     private int id;
     private String name;
