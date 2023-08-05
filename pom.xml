@@ -84,6 +84,7 @@
             <version>0.8.10</version>
         </dependency>
     </dependencies>
+    <!--- SonarQube Integration Starts here-->
     <profiles>
         <profile>
             <id>sonar</id>
